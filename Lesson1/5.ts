@@ -14,11 +14,12 @@ mustBeAstring = 2023;
 //Error: Type 'number' is not assignable to type 'string'
 
 // example 2 
-let phoneNumber;
+let phoneNumber: string;
 
 if(Math.random() > 0.5){
     phoneNumber = '+61771012062';
 
 }else{
-    phoneNumber = 7167762323;
+    phoneNumber = '7167762323';
 }
+console.log(phoneNumber);
