@@ -8,14 +8,14 @@
 
 // explicit type annotations are optional in TS 
 // syntax : variableName: type 
-let myVariable: number = 10;
-let x: number;   //* Explicitly declares x as a number type
-let y = 1;       //* Implicitly declares y as a number type
-let z;           //* Declares z without initializing it
-myVariable = "ten";
-y = "one";
-z = 1 ;
-z = "one"; //z agreed because it is any type
+// let myVariable: number = 10;
+// let x: number;   //* Explicitly declares x as a number type
+// let y = 1;       //* Implicitly declares y as a number type
+// let z;           //* Declares z without initializing it
+// myVariable = "ten";
+// y = "one";
+// z = 1 ;
+// z = "one"; //z agreed because it is any type
 // Type 'string' is not assignable to type 'number'
 
 //Types and subtypes in TypeScript
@@ -53,5 +53,16 @@ let big: bigint = 100n;
 // String Type 
 // string keyword represents sequence characters stored as UTF-16
 // '' " "
+
+let s: string;
+let empty = "";
+let abc = 'abc';
+
+let firstName: string = 'Vinayak';
+let lastName: string = 'Hegde';
+let intro: string = `My name is ${firstName} ${lastName}`;
+console.log(intro);
+// JavaScript and TypeScript have two primitive values used to signal 
+// absent or uninitialized value: null and undefined.
 
 
